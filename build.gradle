@@ -34,6 +34,7 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+//	implementation group: 'cz.jirutka.spring', name: 'embedmongo-spring',
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')
 	implementation 'org.webjars:bootstrap:3.3.7-1'
 	compileOnly('org.projectlombok:lombok')
@@ -42,8 +43,8 @@ dependencies {
 
 //export test coverage
 jacocoTestReport {
-    reports {
-        xml.enabled true
-        html.enabled false
-    }
+	reports {
+		xml.enabled true
+		html.enabled false
+	}
 }
